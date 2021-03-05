@@ -4,18 +4,34 @@
   --azulOscuro: #1d3557;
   --azulClaro: #254470;
   --grisClaro: rgb(216, 216, 216);
+  --grisOscuro: #303030;
+  --grisPrueba: #aaaaaa;
+  --marron: #bb8918;
+  --verdeOscuro: #91bb39;
 }
+
+/* Una paleta de colores alternativa */
+/* 
+:root {
+  --verdeOscuro: #a1ae25;
+  --verdeClaro: #e1dc6b;
+  --marron: #bb8918;
+  --purpura: #523637;
+  --rosaQueNoUsare #f2b9cc;
+}
+
+*/
 
 html {
   font-size: 62.5%;
   box-sizing: border-box;
 }
 
-*,
+/* *,
 *:before,
 *:after {
   box-sizing: inherit;
-}
+} */
 
 body {
   font-size: 16px;
@@ -32,15 +48,29 @@ body {
   font-size: 4rem;
 }
 
+.subtitulo {
+  text-align: center;
+}
+
 .contenedor {
-  max-width: 120rem;
+  max-width: 100rem;
   margin: 0 auto;
+}
+
+.about-me {
+  line-height: 4rem;
+  font-family: "Source Sans Pro";
+  font-size: 2rem;
+  font-weight: lighter;
 }
 
 /* Barra navegacion */
 
 .barra-nav-bg {
-  background-color: var(--azulOscuro);
+  background-color: var(--grisOscuro);
+  background-color: #3b3c3d;
+  /* background-color: var(--grisPrueba); */
+  /* opacity: 0.8; */
 }
 
 .barra-navegacion {
@@ -64,13 +94,59 @@ body {
   font-size: 2rem;
   font-weight: bold;
   color: var(--grisClaro);
+  /* color: var(--negro); */
   text-decoration: none;
   padding: 2rem;
 }
 
 .barra-navegacion a:hover {
-  background-color: var(--azulClaro);
+  /* background-color: var(--azulClaro); */
+  background-color: var(--verdeOscuro);
   color: var(--blanco);
-  transition: 0.5s;
+  transition: 0.4s;
   /* padding-left: 4rem; */
 }
+
+/* Banner de fondo */
+
+.imagen-bg {
+  height: 38rem;
+  max-width: 100%;
+  background-image: url(../img/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Foto de perfil */
+.contenedor-perfil {
+  display: flex;
+  justify-content: center;
+  margin-top: -15rem;
+}
+
+.foto-perfil {
+  border: 0.4rem solid white;
+  height: 30rem;
+  width: 30rem;
+  background-image: url(../img/picture_perfil.jpeg);
+  /* background-image: url(../img/mi_perfil.jpg); */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+
+.caja-carousel {
+  height: 30rem;
+  width: 30rem;
+}
+
+.imagen-carousel {
+  width: 120rem;
+}
+
+/* .carousel-inner {
+  width: 100%;
+  max-height: 200px;
+} */

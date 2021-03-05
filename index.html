@@ -2,31 +2,41 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Personal</title>
 
     <!-- Bootstrap -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
     <!-- Añadir el normalize -->
     <link rel="stylesheet" href="/css/normalize.css" />
 
     <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
         href="https://fonts.googleapis.com/css2?family=RocknRoll+One&family=Source+Sans+Pro:ital,wght@0,200;0,400;0,600;1,200&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- Hoja de Estilos propia -->
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <script>
+        $(function () {
+            $("#barra-nav").load("barra_nav.html");
+        });
+    </script>
 </head>
 
 <body>
+    <header id="barra-nav"></header>
 
-    <header>
+    <!-- <header>
 
         <div class="barra-nav-bg">
             <nav class="barra-navegacion contenedor">
@@ -37,20 +47,37 @@
             </nav>
         </div>
 
+    </header> -->
 
+    <div class="contenedor">
+        <section class="imagen-bg"></section>
+    </div>
 
+    <!-- Contenedor con todo el contenido de la página -->
+    <main>
+        <div class="contenedor">
+            <div class="contenedor-perfil">
+                <div class="foto-perfil"></div>
+            </div>
 
-    </header>
+            <h1 class="titulo">Este señor del que usted me habla</h1>
+            <h2 class="subtitulo">Desarrollador Fullstack</h2>
 
-    <main class="contenedor">
-
-        <h1 class="titulo">Nombre y Apellidos</h1>
-        <h2 class="subtitulo">Desarrollador Fullstack</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum nihil eius iure aperiam porro optio officiis
-            dolore fugit? Incidunt aperiam veritatis blanditiis repudiandae corrupti numquam harum, ea ipsam maxime
-            labore!
-        </p>
-
+            <h3 class="about-me">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum nihil
+                eius iure aperiam porro optio officiis dolore fugit? Incidunt aperiam
+                veritatis blanditiis repudiandae corrupti numquam harum, ea ipsam
+                maxime labore!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum nihil
+                eius iure aperiam porro optio officiis dolore fugit? Incidunt aperiam
+                veritatis blanditiis repudiandae corrupti numquam harum, ea ipsam
+                maxime labore!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum nihil
+                eius iure aperiam porro optio officiis dolore fugit? Incidunt aperiam
+                veritatis blanditiis repudiandae corrupti numquam harum, ea ipsam
+                maxime labore!
+            </h3>
+        </div>
     </main>
 </body>
 
