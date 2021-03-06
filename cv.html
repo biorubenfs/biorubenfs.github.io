@@ -23,6 +23,9 @@
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/jpg" href="./img/gnome_laptop.ico" />
+
     <!-- Hoja de Estilos propia -->
     <link rel="stylesheet" href="./css/styles.css" />
 
@@ -38,9 +41,259 @@
 
     <header id="header"></header>
 
-    <p>Estás en CV</p>
+    <div class="contenedor">
+
+        <h2 class="subtitulo">Echa un vistazo a mi curriculum</h2>
+        <div class="accordion" id="accordionExample">
+
+            <!-- Primer elemento del acordeón -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button titulo-cv" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Experiencia
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body caja-cv">
+                        <div class="elemento-cv">
+                            <h3 class="negrita">Investigador en el Centro Nacional de Biotecnología (CSIC) 2014 - 2018
+                            </h3>
+                            <p>Investigación en el departamento de Genética Molecular de Plantas, en el campo de la
+                                Inmunidad Vegetal, empleando diferentes técnicas de biología molecular como PCR, Western
+                                Blot y cloning, además de cultivo in vitro, microscopia confocal, etc...</p>
+                        </div>
+                        <div class="elemento-cv">
+                            <h3 class="negrita">Investigador en el Instituto de Biotecnología Molecular y Celular de
+                                Plantas (IBMCP - CSIC/UPV) 2012-2013</h3>
+                            <p>Investigación en Señalización de Ácido Abscísico y estrés hídrico en <i>Arabidopsis
+                                    thaliana</i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Segundo elemento del acordeón -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed titulo-cv" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Cursos
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body caja-cv">
+                        <div class="elemento-cv">
+                            <h3 class="negrita">Bootcamp Fullstack Developer Geekhubs - 2021</h3>
+                            <p>Desarrollo de aplicaciones web empleando tecnologías como HTML5, CSS3, Bootstrap,
+                                Javascript, NodeJS, React, PHP</p>
+                        </div>
+                        <div class="elemento-cv">
+                            <h3 class="negrita">Admnistración Junior de Sistemas Operativos Linux. Centro de Formación
+                                en Tecnologías de la
+                                Información y la Comunicación (Getafe) - 2020</h3>
+                            <p>Instalación y configuración de sistemas Linux. Configuración de redes básicas. Tareas de
+                                mantenimiento en línea de comandos</p>
+                        </div>
+                        <div class="elemento-cv">
+                            <h3 class="negrita">Certificado de Profesionalidad Programación con lenguajes orientados a
+                                objetos y bases de datos relacionales - Centro de Formación en Tecnologías de la
+                                Información y la Comunicación (Getafe) - 2020</h3>
+                            <p>Programación con lenguaje JAVA. Bases de Datos SQL.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tercer elemento del acordeón -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed titulo-cv" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Educación
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body caja-cv">
+                        <div class="elemento-cv">
+                            <h3 class="negrita">Licenciatura en Biología - 2012</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quia aut rem eos sapiente,
+                                reprehenderit eum nam velit cupiditate perferendis nihil, officia voluptatibus, corporis
+                                cumque neque! Mollitia esse aspernatur dolor!</p>
+                        </div>
+                        <div class="elemento-cv">
+                            <h3 class="negrita">Educacion 2 </h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quia aut rem eos sapiente,
+                                reprehenderit eum nam velit cupiditate perferendis nihil, officia voluptatibus, corporis
+                                cumque neque! Mollitia esse aspernatur dolor!</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cuarto elemento del acordeón -->
+            <!-- <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFourth">
+                    <button class="accordion-button collapsed titulo-cv" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFourth" aria-expanded="false" aria-controls="collapseFourth">
+                        Tecnologías
+                    </button>
+                </h2>
+                <div id="collapseFourth" class="accordion-collapse collapse" aria-labelledby="headingFourth"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body tecnologias-grid tecnologias-grid">
+                        <img src="./img/git_icon.png" class="" alt="">
+                        <img src="./img/html5_icon.png" class="" alt="">
+                        <img src="./img/css3_icon.png" class="" alt="">
+                        <img src="./img/js_icon.png" class="" alt="">
+                        <img src="./img/node_js.png" class="" alt="">
+                        <img src="./img/react_icon.png" class="" alt="">
+                        <img src="./img/java_icon.png" class="" alt="">
+                        <img src="./img/linux_icon.png" class="" alt="">
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFourth">
+                    <button class="accordion-button collapsed titulo-cv" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFourth" aria-expanded="false" aria-controls="collapseFourth">
+                        Tecnologías
+                    </button>
+                </h2>
+                <div id="collapseFourth" class="accordion-collapse collapse" aria-labelledby="headingFourth"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body tecnologias-grid row">
+                        <div class="col-4 col-md-3 col-lg-2">
+                            <img src="./img/git_icon.png" class="" alt="">
+                        </div>
+                        <div class="col-4 col-md-3 col-lg-2">
+                            <img src="./img/html5_icon.png" class="" alt="">
+                        </div>
+                        <div class="col-4 col-md-3 col-lg-2">
+                            <img src="./img/css3_icon.png" class="" alt="">
+                        </div>
+                        <div class="col-4 col-md-3 col-lg-2">
+                            <img src="./img/js_icon.png" class="" alt="">
+                        </div>
+                        <div class="col-4 col-md-3 col-lg-2">
+                            <img src="./img/node_js.png" class="" alt="">
+                        </div>
+                        <div class="col-4 col-md-3 col-lg-2">
+                            <img src="./img/react_icon.png" class="" alt="">
+                        </div>
+                        <div class="col-4 col-md-3 col-lg-2">
+                            <img src="./img/java_icon.png" class="" alt="">
+                        </div>
+                        <div class="col-4 col-md-3 col-lg-2">
+                            <img src="./img/linux_icon.png" class="" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quinto elemento del acordeón -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFifth">
+                    <button class="accordion-button collapsed titulo-cv" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFifth" aria-expanded="false" aria-controls="collapseFifth">
+                        Publicaciones </button>
+                </h2>
+                <div id="collapseFifth" class="accordion-collapse collapse" aria-labelledby="headingFifth"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="elemento-cv">
+                            <h3 class="negrita">Lipid Droplet Isolation from Arabidopsis thaliana Leaves</h3>
+                            <h4>Izquierdo Y, Fernández-Santos R, Cascón T, Castresana C.</h4>
+                            <p class="negrita abstract"></p>
+                            <p class="abstract"> Lipid droplets (LDs) are neutral lipid aggregates surrounded by a
+                                phospholipid monolayer
+                                and specific proteins. In plants, they play a key role as energy source after seed
+                                germination, but are also formed in vegetative tissues in response to developmental or
+                                environmental conditions, where their functions are poorly understood. To elucidate
+                                these, it is essential to isolate LDs with good yields, while retaining their protein
+                                components. LD isolation protocols are based on their capacity to float after
+                                centrifugation in sucrose gradients. Early strategies using stringent conditions and
+                                LD-abundant plant tissues produced pure LDs where core proteins were identified. To
+                                identify more weakly bound LD proteins, recent protocols have used low stringency
+                                buffers, but carryover contaminants and low yields were often a problem. We have
+                                developed a sucrose gradient-based protocol to isolate LDs from Arabidopsis leaves,
+                                using Tween-20 and fresh tissue to increase yield. In both healthy and
+                                bacterially-infected Arabidopsis leaves, this protocol allowed to identify LD proteins
+                                that were later confirmed by microscopy analysis.</p>
+                            <a class="enlace" href="https://bio-protocol.org/e3867">Ver publicación</a>
+                        </div>
+                        <div class="elemento-cv">
+                            <h3 class="negrita">Protein Profiles of Lipid Droplets during the Hypersensitive Defense
+                                Response of Arabidopsis against Pseudomonas Infection </h3>
+                            <h4>Rubén Fernández-Santos, Yovanny Izquierdo, Ana López, Luis Muñiz, Marta Martínez, Tomás
+                                Cascón, Mats Hamberg, Carmen Castresana </h4>
+                            <p class="negrita abstract">Abstract</p>
+                            <p class="abstract">Lipid droplets (LDs) have classically been viewed as seed storage
+                                particles, yet they are now emerging as dynamic organelles associated with developmental
+                                and stress responses. Nevertheless, their involvement in plant immunity has still been
+                                little studied. Here, we found LD accumulation in Arabidopsis thaliana leaves that
+                                induced a hypersensitive response (HR) after Pseudomonas infection. We established a
+                                protocol to reproducibly isolate LDs and to analyze their protein content. The
+                                expression of GFP fusion proteins in Nicotiana benthamiana and in transgenic Arabidopsis
+                                lines validated the LD localization of glycerol-3-phosphate acyltransferase 4 (GPAT4)
+                                and 8 (GPAT8), required for cutin biosynthesis. Similarly, we showed LD localization of
+                                α-dioxygenase1 (α-DOX1) and caleosin3 (CLO3), involved in the synthesis of fatty acid
+                                derivatives, and that of phytoalexin-deficient 3 (PAD3), which is involved in camalexin
+                                synthesis. We found evidence suggesting the existence of different populations of LDs,
+                                with varying protein contents and distributions. GPAT4 and GPAT8 were associated with
+                                LDs inside stomata and surrounding cells of untreated leaves, yet they were mainly
+                                confined to LDs in guard cells after bacterial inoculation. By contrast, α-DOX1 and PAD3
+                                were associated with LDs in the epidermal cells of HR-responding leaves, with PAD3
+                                mostly restricted to cells near dead tissue, while CLO3 had a more ubiquitous
+                                distribution. As such, the nature of the proteins identified, together with the
+                                phenotypic examination of selected mutants, suggests that LDs participate in lipid
+                                changes and in the production and transport of defense components affecting the
+                                interaction of plants with invading pathogens.</p>
+                            <a class="enlace"
+                                href="https://academic.oup.com/pcp/article/61/6/1144/5812789?login=true">Ver
+                                publicación</a>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Elemento original de bootstrap. No tocar -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTest">
+                    <button class="accordion-button collapsed titulo-cv" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTest" aria-expanded="false" aria-controls="collapseTest">
+                        Modelo NO TOCAR </button>
+                </h2>
+                <div id="collapseTest" class="accordion-collapse collapse" aria-labelledby="headingTest"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that
+                        just about any HTML can go within the <code>.accordion-body</code>, though the transition does
+                        limit
+                        overflow.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer id="footer"></footer>
+
+    <!-- Javascript de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
 
 </body>
 

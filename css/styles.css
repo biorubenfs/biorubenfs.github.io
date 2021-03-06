@@ -23,15 +23,15 @@
 */
 
 html {
-  font-size: 62.5%;
+  font-size: 62.5%; /* Para que 1rem = 10px*/
   box-sizing: border-box;
 }
 
-/* *,
+*,
 *:before,
 *:after {
   box-sizing: inherit;
-} */
+}
 
 body {
   font-size: 16px;
@@ -50,21 +50,26 @@ body {
 
 .subtitulo {
   text-align: center;
+  font-size: 3.4rem;
+  margin-top: 2rem;
 }
 
 .contenedor {
   max-width: 100rem;
   margin: 0 auto;
+  width: min(90%, 100rem);
 }
 
-.about-me {
+.texto {
   line-height: 4rem;
   font-family: "Source Sans Pro";
   font-size: 2rem;
   font-weight: lighter;
 }
 
-/* Barra navegacion */
+/** Header y footer **/
+
+/* Header */
 
 .barra-nav-bg {
   background-color: var(--grisOscuro);
@@ -77,12 +82,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: space-between;
-  /* align-items: center; */
 }
 
 @media (min-width: 480px) {
   .barra-navegacion {
-    /* display: flex; No es necesario, lo está heredando*/
     flex-direction: row;
     justify-content: space-between;
   }
@@ -106,51 +109,6 @@ body {
   transition: 0.4s;
   /* padding-left: 4rem; */
 }
-
-/* Banner de fondo */
-
-.imagen-bg {
-  height: 38rem;
-  max-width: 100%;
-  background-image: url(../img/banner.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-/* Foto de perfil */
-
-.contenedor-perfil {
-  display: flex;
-  justify-content: center;
-  margin-top: -15rem;
-}
-
-.foto-perfil {
-  border: 0.4rem solid white;
-  height: 30rem;
-  width: 30rem;
-  background-image: url(../img/picture_perfil.jpeg);
-  /* background-image: url(../img/mi_perfil.jpg); */
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 50%;
-}
-
-.caja-carousel {
-  height: 30rem;
-  width: 30rem;
-}
-
-.imagen-carousel {
-  width: 120rem;
-}
-
-/* .carousel-inner {
-  width: 100%;
-  max-height: 200px;
-} */
 
 /* Footer */
 
@@ -212,4 +170,156 @@ body {
 .icono-github {
   /* background-image: url(../img/github-icon.svg); */
   background-image: url(../img/github-icon-inverted.png);
+}
+
+/** HOME **/
+
+/* Banner de fondo */
+
+.imagen-bg {
+  height: 38rem;
+  max-width: 100%;
+  background-image: url(../img/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Foto de perfil */
+
+.contenedor-perfil {
+  display: flex;
+  justify-content: center;
+  margin-top: -15rem;
+}
+
+.foto-perfil {
+  border: 0.4rem solid white;
+  height: 30rem;
+  width: 30rem;
+  background-image: url(../img/picture_perfil.jpeg);
+  /* background-image: url(../img/mi_perfil.jpg); */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+
+/** CONTACTO  **/
+
+.redes-sociales {
+  height: 10rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.redes-sociales-icono {
+  height: 8rem;
+  width: 8rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.icono-github-negro {
+  background-image: url(../img/github-icon.svg);
+}
+
+.contacto {
+  text-align: center;
+  margin: 2rem 0rem;
+}
+
+/** PORTFOLIO **/
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio-elemento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imagen-texto {
+  display: flex;
+  flex-direction: row;
+}
+
+.descripcion {
+  margin-top: 4rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.titulo-proyecto {
+  font-family: "Source Sans Pro";
+  font-size: 2.6rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/** CV **/
+
+/* Acordeon de CV */
+
+.accordion {
+  margin: 1rem auto;
+}
+
+.titulo-cv {
+  font-family: "Source Sans Pro";
+  font-size: 2.6rem;
+  color: negro;
+}
+
+.caja-cv {
+  display: flex;
+  flex-direction: column;
+}
+
+.experiencia {
+  margin-bottom: 1rem;
+}
+
+.negrita {
+  font-weight: bold;
+}
+
+.elemento-cv {
+  margin-bottom: 2.8rem;
+}
+
+.elemento-cv:last-of-type {
+  margin-bottom: 0rem;
+}
+
+/* .tecnologias-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+} */
+
+.row {
+  align-items: center;
+}
+
+.enlace {
+  text-decoration: none;
+}
+
+.abstract {
+  margin-left: 4rem;
+  margin-top: 2rem;
 }
