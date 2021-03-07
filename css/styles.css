@@ -1,26 +1,13 @@
 :root {
   --negro: #000;
   --blanco: #fff;
-  --azulOscuro: #1d3557;
-  --azulClaro: #254470;
+  /* --azulOscuro: #1d3557;
+  --azulClaro: #254470; */
   --grisClaro: rgb(216, 216, 216);
   --grisOscuro: #303030;
-  --grisPrueba: #aaaaaa;
-  --marron: #bb8918;
+  /* --marron: #bb8918; */
   --verdeOscuro: #91bb39;
 }
-
-/* Una paleta de colores alternativa */
-/* 
-:root {
-  --verdeOscuro: #a1ae25;
-  --verdeClaro: #e1dc6b;
-  --marron: #bb8918;
-  --purpura: #523637;
-  --rosaQueNoUsare #f2b9cc;
-}
-
-*/
 
 html {
   font-size: 62.5%; /* Para que 1rem = 10px*/
@@ -65,6 +52,8 @@ body {
   font-family: "Source Sans Pro";
   font-size: 2rem;
   font-weight: lighter;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 /** Header y footer **/
@@ -73,9 +62,6 @@ body {
 
 .barra-nav-bg {
   background-color: var(--grisOscuro);
-  /* background-color: #3b3c3d; */
-  /* background-color: var(--grisPrueba); */
-  /* opacity: 0.8; */
 }
 
 .barra-navegacion {
@@ -97,17 +83,14 @@ body {
   font-size: 2rem;
   font-weight: bold;
   color: var(--grisClaro);
-  /* color: var(--negro); */
   text-decoration: none;
   padding: 2rem;
 }
 
 .barra-navegacion a:hover {
-  /* background-color: var(--azulClaro); */
   background-color: var(--verdeOscuro);
   color: var(--blanco);
   transition: 0.4s;
-  /* padding-left: 4rem; */
 }
 
 /* Footer */
@@ -129,8 +112,6 @@ body {
 
 @media (min-width: 480px) {
   .footer {
-    /* width: 100%;
-    display: flex; */
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -168,7 +149,6 @@ body {
 }
 
 .icono-github {
-  /* background-image: url(../img/github-icon.svg); */
   background-image: url(../img/github-icon-inverted.png);
 }
 
@@ -197,8 +177,7 @@ body {
   border: 0.4rem solid white;
   height: 30rem;
   width: 30rem;
-  background-image: url(../img/picture_perfil.jpeg);
-  /* background-image: url(../img/mi_perfil.jpg); */
+  background-image: url(../img/imagen_perfil.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -280,7 +259,7 @@ img {
 .titulo-cv {
   font-family: "Source Sans Pro";
   font-size: 2.6rem;
-  color: negro;
+  color: var(--negro);
 }
 
 .caja-cv {
@@ -304,13 +283,6 @@ img {
   margin-bottom: 0rem;
 }
 
-/* .tecnologias-grid {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  align-items: center;
-} */
-
 .row {
   align-items: center;
 }
@@ -320,6 +292,28 @@ img {
 }
 
 .abstract {
-  margin-left: 4rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
   margin-top: 2rem;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  text-align: justify;
+}
+
+.texto-descripcion {
+  font-size: 1.8rem;
+  line-height: 2rem;
+  font-family: "Source Sans Pro";
+  font-weight: lighter;
+}
+
+/* Banner de fondo del resto de páginas */
+
+.imagen-bg-resto {
+  height: 20rem;
+  max-width: 100%;
+  background-image: url(../img/banner_resto.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
