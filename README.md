@@ -9,7 +9,7 @@ El sitio web es enteramente adaptativo, bien mediante el uso de Bootstrap o empl
 
 ## Presentación
 ### Home de la página
-![web_personal](https://user-images.githubusercontent.com/65553496/110237792-2f1c0f00-7f3e-11eb-9424-d8629badcdf1.png)
+![home](https://user-images.githubusercontent.com/65553496/110238278-13663800-7f41-11eb-8f66-41ad5930d6d5.png)
 
 ### Diseño adaptativo
 ![responsive_design](https://user-images.githubusercontent.com/65553496/110238119-072dab00-7f40-11eb-8be7-bd1754122463.gif)
