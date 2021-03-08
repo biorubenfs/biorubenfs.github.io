@@ -60,6 +60,13 @@ body {
 
 /* Header */
 
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
 .barra-nav-bg {
   background-color: var(--grisOscuro);
 }
@@ -94,6 +101,13 @@ body {
 }
 
 /* Footer */
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
 
 .footer-bg {
   background-color: var(--grisOscuro);
