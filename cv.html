@@ -48,6 +48,7 @@
         <!-- <h2 class="subtitulo">Echa un vistazo a mi curriculum</h2> -->
         <div class="accordion" id="accordionExample">
 
+
             <!-- Primer elemento del acordeón -->
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
@@ -59,6 +60,15 @@
                 <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body caja-cv">
+                        <div class="elemento-cv">
+                            <h3 class="negrita">Desarrollador Backend Junior en <a class="enlace" target="_blank"
+                                    href="https://www.usyncro.com/about/">Usyncro</a> (anteriormente eCustoms) Mayo
+                                2021 - Actualmente
+                            </h3>
+                            <p class="texto-descripcion">Diseño y desarrollo de API REST con NodeJs, Express y MongoDB
+                                añadiendo nuevas funcionalidades a la plataforma. Realización de test de integración y
+                                generación de documentación con Swagger.</p>
+                        </div>
                         <div class="elemento-cv">
                             <h3 class="negrita">Investigador en el Centro Nacional de Biotecnología (CSIC) 2014 - 2018
                             </h3>
@@ -178,18 +188,45 @@
                         <div class="col-4 col-md-3 col-lg-2">
                             <img src="./img/linux_icon.png" class="" alt="">
                         </div>
+                        <div class="col-4 col-md-3 col-lg-2">
+                            <img src="./img/mongodb-icon.svg" class="" alt="">
+                        </div>
+                        <div class="col-4 col-md-3 col-lg-2">
+                            <img src="./img/sql-icon.svg" class="" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
 
             <!-- Quinto elemento del acordeón -->
             <div class="accordion-item">
-                <h2 class="accordion-header" id="headingFive">
+                <h2 class="accordion-header" id="headingFour">
                     <button class="accordion-button collapsed titulo-cv" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                        Publicaciones </button>
+                        Herramientas
+                    </button>
                 </h2>
                 <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body tecnologias-grid row">
+                        <div class="col-4 col-md-3 col-lg-2">
+                            <img src="./img/postman-icon.svg" class="" alt="">
+                        </div>
+                        <div class="col-4 col-md-3 col-lg-2">
+                            <img src="./img/visual-studio-code-icon.svg" class="" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sexto elemento del acordeón -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed titulo-cv" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        Publicaciones </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingSix"
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                         <div class="elemento-cv">
